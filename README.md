@@ -11,6 +11,3 @@ Video for A2.1 https://www.youtube.com/watch?v=sDYxYD226N4
 
 Video for A1.2: https://www.youtube.com/watch?v=FXR4oD34uHs
 
-Video for A1.2: https://www.youtube.com/watch?v=FXR4oD34uHs
-
-
