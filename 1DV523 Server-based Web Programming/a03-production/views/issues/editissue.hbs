@@ -1,0 +1,27 @@
+{{#if issue}}
+  <div class="d-flex bd-highlight mb-3">
+      <div class="me-auto p-2 bd-highlight">
+          <h2>Edit Issue: {{issue.title}} </h2>
+      </div>
+      <div class="p-2 bd-highlight">
+          <button type="button" class="btn btn-secondary" onclick="history.back()">Back</button>
+      </div>
+  </div>
+  <div class="container mt-4" style="color:black;">
+      <div class="card">
+          <div class="card-header"> Edit Issue Form </div>
+          <div class="card-body">
+              <form action="/hook/editIssue" method="POST">
+                  <div class="mb-3">
+                      <textarea rows="4" cols="117" class="form-control" name="description" aria-describedby="descriptionHelp">{{issue.description}}</textarea>
+                      <textarea style="display:none;" name="link">{{issue._links.self}}</textarea>
+                      <div id="descriptionHelp" class="form-text">Edit the description of the issue.</div>
+                      <div id="descriptionHelp" class="form-text">The issue is created by {{issue.author.name}}. <br> {{issue.created_at}}. </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Edit Issue</button>
+              </form>
+          </div>
+      </div>
+    
+  </div>
+ {{/if}}

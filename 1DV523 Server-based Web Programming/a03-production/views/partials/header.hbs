@@ -1,0 +1,20 @@
+{{#if flash}}
+    <h5 class="alert alert-{{flash.type}}" role="alert"> {{flash.text}} </h5>
+{{/if}}
+<h5 id="notice" style="display: none" class="alert alert-success" role="alert"> New comment added on issue. </h5>
+<ul id="menu">
+    <li><a class="sections" href= "/" > Home </a></li>
+    {{#if user}}
+        <li><a class="sections" href= "/hook" > Issues </a></li>
+        <li><a class="sections" href= "/commits" > Commits </a></li>
+        <li><a class="sections" href= "/tags" > Tags </a></li>
+        <li><a class="sections" href= "/releases" > Releases </a></li>
+        <li><a class="sections" href= "/login/logout" > Logout </a></li>
+    {{else}}
+        <li><a class="sections" href= "/login" > Login </a></li>
+    {{/if}}
+    <li><a class="sections" href= "/about" > About </a></li>
+    <li><a id="aboutme" style="margin-left: 20px" href="https://lnu.se/student">
+        |&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLinnaeus university</a>
+    </li>
+</ul>

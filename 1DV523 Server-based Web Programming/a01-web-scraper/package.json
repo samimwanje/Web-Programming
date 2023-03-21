@@ -1,0 +1,27 @@
+{
+  "name": "a01-web-scraper",
+  "version": "1.0.0",
+  "description": "Template for the assignment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js ",
+    "lint": "standard \"*.js\" ./src || exit 0",
+    "lint:fix": "standard \"*.js\" ./src --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.lnu.se:1dv523/student/mm223kk/a01-web-scraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
+    "cookie-session": "^1.4.0",
+    "lint": "^0.7.0",
+    "node-fetch": "^3.1.0",
+    "request": "^2.88.2",
+    "url": "^0.11.0"
+  }
+}

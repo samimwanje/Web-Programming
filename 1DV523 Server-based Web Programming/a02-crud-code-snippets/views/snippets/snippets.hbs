@@ -1,0 +1,37 @@
+ <div class="container">
+   <div class="d-flex bd-highlight mb-3">
+     <div class="me-auto p-2 bd-highlight">
+       <h2>Snppets</h2>
+     </div>
+     <div class="p-2 bd-highlight">
+       <button type="button" class="btn btn-secondary" onclick="location.href='/snippets/create'">Create</button>
+     </div>
+   </div>
+   <div class="table-responsive">
+     <table class="table">
+       <thead>
+         <tr style="color: white;">
+           <th scope="col">Title</th>
+           <th scope="col">Created</th>
+           <th scope="col">Author</th>
+           <th scope="col">&emsp; Action</th>
+         </tr>
+       </thead>
+       <tbody id="mytable">
+         {{#each rows}}
+           <tr>
+             <th scope="row" colspan="">
+               <a id="footerlink" href="/snippets/read/{{this._id}}">{{this.name}} </a>
+             </th>
+             <th scope="row" colspan="">{{this.created}}</th>
+             <th scope="row" colspan="">{{this.username}}</th>
+             <th scope="row" colspan="">
+               <button type="button" style="height: 30px; font-size: 12px; color:white" class="btn btn-outline-secondary" onclick="location.href='/snippets/edit/{{this._id}}'">Edit</button>
+               <button type="button" style="height: 30px; font-size: 12px;" class="btn btn-outline-danger" onclick="location.href='/snippets/delete/{{this._id}}'">Del</button>
+             </th>
+           </tr>
+         {{/each}}
+       </tbody>
+     </table>
+   </div>
+ </div>

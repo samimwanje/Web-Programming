@@ -1,0 +1,90 @@
+/* Body global settings */
+body {
+  margin: 0px auto;
+  background: black;
+  background: linear-gradient(to top, black 20%, gray, gray);
+  background-repeat: repeat-y;
+  color: white;
+  height: 920px;
+  width: 900px;
+  font-family: 'Comic Sans MS';
+  font-size: 15px;
+  line-height: 22px;
+  cursor: default;
+}
+
+/* Menu bar settings */
+#menu {
+  list-style-type: none;
+  border-radius: 10px;
+  display: block;
+  margin: 3px;
+  background: white;
+  text-shadow: 3px 3px 15px black;
+  height: 23px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#menu li {
+  position: relative;
+  padding: 5px;
+  display: inline;
+}
+
+/* menu text settings */
+.sections {
+  position: relative;
+  left: -35px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Menu text mechanics/effects */
+.sections:visited {
+  color: black;
+}
+
+.sections:hover {
+  text-shadow: 3px 3px 16px red;
+  font-size: 16px;
+  color: black;
+}
+
+/* Front image mechanics */
+#frontimage {
+  border: black 2px inset;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px black;
+}
+
+/* Picture mechanics */
+#frontimage:hover,
+#aboutimg:hover {
+  cursor: pointer;
+  border: black 2px inset;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px gray;
+}
+
+/* Footer settings */
+footer p {
+  font-family: 'Times new Roman';
+  font-size: 65%;
+  line-height: 140%;
+}
+
+/* Footer mechanics */
+#footerlink:visited {
+  color: white;
+}
+
+#footerlink:hover {
+  text-shadow: 3px 3px 8px white;
+  font-size: 10px;
+  color: white;
+}
+
+#footerlink:link {
+  color: white;
+}

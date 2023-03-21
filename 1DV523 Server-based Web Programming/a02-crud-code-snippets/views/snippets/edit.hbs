@@ -1,0 +1,24 @@
+  {{#if author}}
+    <div class="d-flex bd-highlight mb-3">
+      <div class="me-auto p-2 bd-highlight">
+        <h2> Edit Snippet: {{author.name}} </h2>
+      </div>
+      <div class="p-2 bd-highlight">
+        <button type="button" class="btn btn-secondary" onclick="location.href='/snippets'">Back</button>
+      </div>
+    </div>
+    <div class="container mt-4" style="color:black;">
+      <div class="card">
+        <div class="card-header"> Edit Snippet Form </div>
+        <div class="card-body">
+          <form action="../update/{{author._id}}" method="POST">
+            <div class="mb-3">
+              <textarea rows="4" cols="117" class="form-control" name="description" aria-describedby="descriptionHelp">{{author.description}}</textarea>
+              <div id="descriptionHelp" class="form-text">Edit the description of the snippet.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Edit Snippet</button>
+          </form>
+        </div>
+      </div>
+  {{/if}}
+  </div>

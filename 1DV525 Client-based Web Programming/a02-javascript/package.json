@@ -1,0 +1,32 @@
+{
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "lint": "npx eslint ./web || exit 0",
+    "lint:fix": "npx eslint ./web --fix || exit 0",
+    "htmlhint": "npx htmlhint ./web || exit 0",
+    "stylelint": "npx stylelint \"./web/**/*.css\" || exit 0",
+    "test": "npm run standard && npm run htmlhint && npm run stylelint",
+    "clean": "rm -rf build/ node_modules/",
+	"standard": "npx standard || exit 0",
+	"standard:fix": "npx standard --fix  || exit 0",
+	"style:fix": "npx stylelint \"./web/**/*.css\" --fix || exit 0"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.2.0"
+  },
+  "devDependencies": {
+    "@lnu/eslint-config": "^1.1.0",
+    "eslint": "^7.9.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsdoc": "^30.5.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "hint": "^6.1.4",
+    "htmlhint": "^0.14.1",
+    "snowpack": "^2.13.3",
+    "standard": "*",
+    "stylelint": "^13.7.1"
+	
+  }
+}

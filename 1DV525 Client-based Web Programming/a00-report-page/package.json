@@ -1,0 +1,44 @@
+{
+  "name": "report-page",
+  "version": "1.0.0",
+  "description": "1DV525 - The report page",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "lint": "npx eslint ./web || exit 0",
+    "lint:fix": "npx eslint ./web --fix || exit 0",
+    "htmlhint": "npx htmlhint ./web || exit 0",
+    "stylelint": "npx stylelint \"./web/**/*.css\" || exit 0",
+    "test": "npm run standard && npm run htmlhint && npm run stylelint",
+    "clean": "rm -rf build/ node_modules/",
+	"standard": "npx standard || exit 0",
+	"standard:fix": "npx standard --fix  || exit 0",
+	"style:fix": "npx stylelint \"./web/**/*.css\" --fix || exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.lnu.se:1dv525/template/report-page.git"
+  },
+  "contributors": [
+    "Sami Mwanje <mm223kk@student.lnu.se>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@lnu/eslint-config": "^1.1.0",
+    "chai": "^4.2.0",
+    "eslint": "^7.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsdoc": "^27.0.7",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^8.0.1"
+  },
+  "eslintConfig": {
+    "extends": "@lnu",
+    "env": {
+      "mocha": true
+    }
+  }
+}

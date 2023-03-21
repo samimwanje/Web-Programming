@@ -1,0 +1,99 @@
+/* Body global settings */
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Comic Sans MS';
+  margin: 0 auto;
+  background: linear-gradient(to top, black 10%, gray, black);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  width: 900px;
+  font-size: 15px;
+}
+
+/* Menu bar settings */
+#menu {
+  padding-top: 2px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  list-style-type: none;
+  border-radius: 5px;
+  padding-left: 2px;
+  background: white;
+  text-shadow: 5px 5px 6px black;
+  height: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#menu li {
+  padding: 6px;
+  display: inline;
+}
+
+/* menu text settings */
+.sections {
+  text-decoration: none;
+  color: black;
+}
+
+/* Menu text mechanics/effects */
+.sections:visited,
+#aboutme:visited {
+  color: black;
+}
+
+.sections:hover {
+  text-shadow: 3px 3px 16px blue;
+  font-size: 18px;
+  color: black;
+}
+
+/* Front image mechanics */
+#frontimage {
+  border: black 2px inset;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px black;
+}
+
+/* About image settings */
+#aboutimg {
+  border: black 2px inset;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px black;
+}
+
+/* Picture mechanics */
+#frontimage:hover,
+#aboutimg:hover {
+  cursor: pointer;
+  border: black 2px inset;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px gray;
+}
+
+/* Footer settings */
+footer p:last-child {
+  font-family: 'Times new Roman';
+  font-size: 65%;
+  line-height: 140%;
+}
+
+/* Footer mechanics */
+#footerlink:visited {
+  color: white;
+}
+
+#footerlink:hover {
+  text-shadow: 3px 3px 8px white;
+  font-size: 10px;
+  color: white;
+}
+
+#footerlink:link {
+  color: white;
+}

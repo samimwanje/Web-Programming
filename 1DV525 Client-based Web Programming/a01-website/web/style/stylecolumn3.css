@@ -1,0 +1,105 @@
+	
+	/* Body global settings */
+	body {
+    margin:  auto;
+	margin-top: 2px;
+	background: black;
+	background: linear-gradient(to top, gray 10%,black, black);
+	width: 750px;
+	height: 1000px;
+	color: white;
+	font-family: "Comic Sans MS";
+	font-size: 15px;
+	line-height: 22px;
+	cursor: default;
+	}
+
+
+#menu{
+	margin-top: 5px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	border-radius: 3px;
+	border-style: outset;
+	border-width: 3px;
+	border-color: gray;
+	height: 15px;
+	background: black;
+}
+
+#menutext{
+	padding-bottom: 10px;
+	font-size: 15px;
+	color: white;
+	margin-left: 5px;
+}
+
+
+#menubutton{
+	padding: 1px;
+	border-color: gray;
+	margin-right: 10px;
+	border-style: outset;
+	text-decoration: none;
+}
+
+#menubutton:hover{
+	text-shadow: 10px 10px 10px blue; font-size: 16px;
+	border-style: inset;}
+
+
+#menutitle a{
+	text-decoration: none;
+}
+
+#menubutton, #menutitle a:visited{ color: white; }
+
+/* Body here */
+
+#column0{
+	padding: 5px;
+	max-width: 200px;
+	float: left;
+	
+}
+
+
+
+#column2{
+	padding: 5px;
+	width: 50%;
+	float: left;
+	
+	
+}
+
+#column1{
+	padding: 5px;
+	max-width: 220px;
+	float: right;
+	
+}
+
+table{
+	margin: auto;
+	margin-top: 300px;
+	
+}
+
+
+
+
+/* Footer settings */
+	footer{
+	color: white;
+	position: relative;
+	bottom: 0px;
+	font-family: "Times new Roman";
+	font-size: 65%; 
+	line-height: 140%;	}
+	
+	/* Footer mechanics */
+	#footerlink:visited{ color: white; }
+	#footerlink:hover{ text-shadow: 3px 3px 8px white; font-size: 10px; color: white; }
+	#footerlink:link{ color: white; }

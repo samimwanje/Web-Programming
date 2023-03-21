@@ -1,0 +1,76 @@
+{{#if user}}
+    <link rel="stylesheet" href="/style/profilestyle.css">
+    <div class="container">
+        <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto p-2 bd-highlight">
+                <h3>GitLab GUI - Issues</h3>
+            </div>
+            <div class="p-2 bd-highlight">
+                <button type="button" class="btn btn-secondary" onclick="history.back()">Back</button>
+                <button type="button" class="btn btn-secondary" onclick="location.href='/hook/createIssue'">Create Issue</button>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="color:black;">
+        <div class="col-4">
+            <div class="card">
+                <div style="background: transparent; border-radius: 10px;" class="avatar-ctn">
+                    <div> <small style="color: white; float:" class="card-title">{{user.name}}</small> </div>
+                    <img style="border-radius: 20px;" src="{{user.avatar_url}}" class="avatar" alt="user profile picture"/>
+                </div>
+                <div class="card-body">
+                    <div id="list-example"  class="list-group">
+                        {{#each projects}}
+                          {{#if this.name}}
+                            <a class="list-group-item list-group-item-action" href="/hook/id/{{this.id}}">{{this.name}}</a>
+                          {{/if}}
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="card text-center" >
+                <div class="card-header" style="color:white"> Project:  {{currentProject.name}}  </div>
+                <div class="card-body" style="color:whitesmoke" >
+                    <div class="table-responsive">
+                        <table style="color: black;" class="table">
+                            <thead>
+                                <tr style="color: white;">
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Created</th>
+                                    <th scope="col">Author</th>
+                                    <th scope="col">&emsp; Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="mytable">
+                                {{#each issues}}
+                                  <tr style="color: black" >
+                                      <th scope="row" colspan="">
+                                          <a style=" display:inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 13ch; white-space: nowrap; color: white" id="footerlink" href="/hook/readissue?link={{this._links.self}}">{{this.title}} </a>
+                                      </th>
+                                      <th scope="row" colspan=""><a style=" display:inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 16ch; white-space: nowrap;">{{this.created_at}}</a></th>
+                                      <th scope="row" colspan="">{{this.author.name}}</th>
+                                      <th style = "white-space: nowrap;" scope="row" colspan="">
+                                          <button type="button" style="height: 36px; font-size: 13px; color:white" class="btn btn-outline-secondary" onclick="location.href='/hook/editissue?link={{this._links.self}}'">Edit</button>
+                                          <button type="button" style="height: 36px; font-size: 13px;" class="btn btn-outline-danger" onclick="location.href='/hook/deleteissue?link={{this._links.self}}'">Del</button>
+                                      </th>
+                                  </tr>
+                                {{/each}}
+                            </tbody>
+                        </table >
+                    </div>
+                </div>
+                <div class="card-footer text-muted">
+                    GitLab GUI&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="/login/logout">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script> const projectID = {{currentProject.id}}</script> 
+    <script src='/socket.io/socket.io.js'></script>
+    <script src="/script/client.js"></script>
+{{/if}}

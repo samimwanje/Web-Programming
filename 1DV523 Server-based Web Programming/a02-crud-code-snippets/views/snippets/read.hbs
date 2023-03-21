@@ -1,0 +1,21 @@
+  {{#if description}}
+    <div class="d-flex bd-highlight mb-3">
+      <div class="me-auto p-2 bd-highlight">
+        <h2> {{description.name}} </h2>
+      </div>
+      <div class="p-2 bd-highlight">
+        <button type="button" class="btn btn-secondary" onclick="location.href='/snippets'">Back</button>
+      </div>
+    </div>
+    <div class="container mt-4" style="color:black;">
+      <div class="card">
+        <div class="card-header"> Edit Snippet </div>
+        <div class="card-body">
+          <div class="mb-3">
+            <textarea readonly rows="4" cols="117" class="form-control" name="description" aria-describedby="descriptionHelp">{{description.description}}</textarea>
+            <div id="descriptionHelp" class="form-text">The snippet is created by {{description.username}}. <br> {{description.created}}. </div>
+          </div>
+        </div>
+      </div>
+  {{/if}}
+  </div>

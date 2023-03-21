@@ -1,0 +1,26 @@
+{
+  "name": "my-cool-package",
+  "devDependencies": {
+    "@lnu/eslint-config": "^1.1.0",
+    "chai": "^4.2.0",
+    "eslint": "^7.9.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsdoc": "^30.5.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "htmlhint": "^0.14.1",
+    "jsonlint": "^1.6.3",
+    "snowpack": "^2.11.1",
+    "standard": "*",
+    "stylelint": "^13.7.1"
+  },
+  "scripts": {
+    "lint": "npx eslint ./src || exit 0",
+    "lint:fix": "npx eslint ./src --fix || exit 0",
+    "htmlhint": "npx htmlhint ./public || exit 0",
+    "stylelint": "npx stylelint \"./public/**/*.css\" || exit 0",
+    "test": "npx stylelint \"./public/**/*.css\" || exit 0",
+    "build": "npx eslint ./public --fix || exit 0",
+	"start": "snowpack dev"
+  }
+}

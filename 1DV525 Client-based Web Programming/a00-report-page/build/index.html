@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Web site created using create-snowpack-app" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>JavaScript SPA</title>
+  </head>
+  <body>
+ 
+ 
+ 
+	
+	
+	<div id="menubox" onclick="createMenu()" > <!--- div for menu ---> 
+	<ul id="menu">
+	<li><a class="sections" href= "index.html" > Quiz </a></li>																
+	<li><a class="sections" href="https://coursepress.lnu.se/kurs/introduction-to-web-programming/"> &nbsp; A03 – JavaScript SPA </a></li>
+	</ul>
+	</div>
+
+
+	<div id="title" >
+	<p>Fetch Server Quiz</p>
+	<p id="timer"></p>
+	</div>
+ 
+  
+	<div id="quizGme">
+	<div id="sendRecieve">
+	<textarea readonly>
+Please enter a username... </textarea>
+	<input type="text" id="userInput" title="Type your anwswer here..." type="text" placeholder="Type your answer here..."/>
+	</div>
+	
+	<div id="scoreboard"></div>
+	
+	</div>
+	
+	<div id="information">
+	<p>You are going to answer on some questions from a pbulic client application through a RESTful Web API. The first question (starting point of the application) is at the URL:<b style="color: darkgreen">
+https://courselab.lnu.se/quiz/question/1</b>
+
+<br><br>At the start of the game, you will be able to write a username and a URL to the RESTful Web API that is going to be used in the quiz game. 
+The game have a timer that gives you the maximum time of  10 seconds to answer each question. 
+If you do not answer during the time or give a false answer, the game is over and you should be able to start over by sending <b>ENTER</b>.
+
+<br><br>If you answer all of the questions correctly, the game will end and you will recieve a proper "victory message" and showing the time it took to complete the game.
+A high score list is presented to the right, your username will be included in the list if you manage to answer all the questions in good time.</p>
+	
+	</div>
+  
+	
+	
+
+<footer>  <!--- with an inline style for the text size. ----> 
+    <hr >
+    <p>  ©2020 Sami Mwanje. <br> Contact: mm223kk@student.lnu.se <br> <a id="footerlink" href= "https://lnu.se/en/meet-linnaeus-university/Organisation/faculty-of-technology/" > Linnaeus University Faculty of Technology</a>  </p>
+</footer>
+<script type="module" src="/dist/index.js"></script>
+ </body>
+</html>

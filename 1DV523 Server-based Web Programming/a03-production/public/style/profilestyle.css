@@ -1,0 +1,36 @@
+.avatar-ctn {
+  background-color: black;
+  text-align: center;
+}
+
+.avatar {
+  width: 65%;
+  border-bottom: 1px solid rgb(0 0 0 / 12.5%);
+}
+
+.card {
+  background-color: #1e2b32;
+  border-radius: 10px;
+}
+
+#list-example {
+  color: black;
+  background-color: #1e2b32;
+  border-radius: 10px;
+}
+
+#list-example a {
+  color: white;
+  background-color: #1e2b32;
+  border-radius: 10px;
+}
+
+#list-example a:hover {
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#list-example a:active {
+  color: gray;
+}

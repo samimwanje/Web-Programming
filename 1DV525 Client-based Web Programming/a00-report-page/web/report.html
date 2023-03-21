@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Report</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png" />
+    <script src="script/loadmenu.js" defer></script>
+    <!--- read script that contain external HTMLS --->
+    <script src="script/loadfooter.js" defer></script>
+  </head>
+
+  <body style="background: linear-gradient(to top, 10% black, darkgray, darkgray)">
+    <div id="loadmenu"></div>
+    <section>
+      <h2>Part 00 - A00</h2>
+
+      <article style="color: white">
+        <p>
+          Before this course I didn't know much about HTML and CSS, so I had spend much time on learning it in
+          order to understand your code and going forward.<br />
+          I started by looking att your code in the example. After that I built up some new knowledge by using
+          books/links, Youtube and Google. Then it was time for me to try to implement your code without "help"
+          and by using the new knowledge. After the "Rebuild" I started modifying the report page with my own
+          preference by using what I recently had learned about Java and CSS.
+          <br /><br />
+          I have not started with JavaScript yet, thought I should start when I have reached a level that is
+          "OK" in HTML and CSS. I am having some issues when it comes to using GitLab. I am trying to create a
+          local-folder outside the "default-folder" in my documents. This folder shall hold all my web-files, so
+          I easily can modify them and the re-uploading them on GitLab. But I am succeeding well on that. So I
+          am right now manually updating the code on GitLab by mostly using ctrl+v from my localy coded files.
+        </p>
+      </article>
+    </section>
+	
+    <section style="color: white">
+      <h2>Part 01 - A01</h2>
+      <p>
+        1. As said in part 01 I didn't know much about HTML and CSS before. I have just seen some codes before,
+        but never really dived in to it. After this assignment and assignment 00 I think this is a very fun
+        language, that is not so hard to learn and remeber.
+      </p>
+      <p>
+        2 and 3. I would say that HTML is like the the structure. For example if you have a ball, the base has a
+        structure it is round and nothing else. It's just a ball. To add colors and other styles on the ball we
+        need to use CSS. CSS add color for exemple a blue ball, a dotted ball and so on. We can even change the
+        size of the ball now. Though we can do this in html too. Another way to explain it is to think like that
+        html, is simple text without look. Only plain text. To add some colors and effects to the text we need
+        to use css.
+      </p>
+
+      <p>
+        4. You can always use css codes in the HTML files, but this will make some markup lines very large in
+        length and hard to read and understand. This makes is harder for a user to find the error and so on. A
+        solution to this is to have the CSS-content located in a .css-file. Using a seperate location for the
+        CSS-code makes it easier to write the code and find errors. Sometimes it can be unuseful to add the
+        css-code in the css-file, if you ask me. For example when you are decding the size of an Image. This can
+        be done directly in the html. We it come to codes that relate to eachothers it may be better to use a
+        new CSS. This will make it possible to example decide that all images on the page should have 300px
+        width, without retyping it for every image.
+      </p>
+
+      <p>
+        5 and 6 My first impression of JavaScript was "Oh this reminds me of Java...", knowing javascript
+        easier. I didn't find it hard at all. I would describe it like java without type-notes and someway
+        different "classes". For every type "var/let" can be used in javaScript. It's like a lazy way of writing
+        a JavaCode.
+      </p>
+
+      <p>
+        7. I would say that the JavaScript language handles the behaviour of the "ball". Like what happens when
+        the user kicks the ball, and so on. JavaScript is mostly used to handle user inputs, here it can be used
+        to make sure that the user have entered to correct value and so on. We can also modifie the HTML-code
+        with JavaScript. New elements can be added and elements can be edited in run-time.
+      </p>
+
+      <p>
+        8. I used basic knowledge from java to finish the task. I got a little stuck when it came to making the
+        JavaScript-code cooperate with the html code. This came up when the script had to read a used input or
+        react on a button. Button after some studies this wasn't so hard if you know java. I would say that 90 %
+        of the task was handled by only thinking in java.
+      </p>
+
+      <p>
+        9. Had to google what TIL means... But I learned more on how user input in textfields and so on can be
+        read with JavaScript I also got reminded several times that I don't need a type when creating a variable
+        or using parameters on a function. Another cool thing I figured out was that html codes can be placed in
+        .innerHTML which can be used when wrting something to the page.
+      </p>
+    </section>
+	<br><br>
+    <section>
+      <h2>Part 02 - A02</h2>
+      <p>
+        <b>1.</b> Explain how the scope works in JavaScript, how hoisting affects it and how a closure works.
+        <br /><br />
+        The scope works with similar rules that can be found in other programming languages such as Java. When a
+        user declares a new variable using the type "let or const", they should be able to access the variable
+        through the entire .js-file. This is called the global scope. Variables within here use to be referred
+        to as global variables. There are some global variables that are pre declared by the browser. This leads
+        to that these pre declared variables can be uses as tools when programming. An example of that is the
+        document and window call.
+        <br /><br />
+        If the "let/const" variable is declared inside a certain scope, the variable will be blocked from
+        accssess outside the scope. A scope can be withing a if-block, for loops, while loops, objects and so
+        on. So a "let/const" type variable created within a scope can only be accssed from within that scope.
+        <br /><br />
+        When a variable is declared with the type "var" within a code block it will not be blocked. This means
+        that a variable created with "var" inside an if-block and so on, can be accessed outside this block.
+        Though a variable declared with the type "var" in a FUNCTION CAN STILL NOT be accessed outside the
+        function scope. Also a function created inside a function can not be accessed outside itself until it is
+        declared. A thing to remeber is that the inner scope can have access to the variables of its outer
+        scope.
+        <br /><br />
+        Modules have a so called module scope and can only be accessed if they are exported and then imported in
+        another .js-file. So every variable that is not exported remains private inside a module. A good thing
+        with scopes is that common variable names can be reused without any collision.
+        <br /><br />
+        Another thing to remeber is hoisting. Which means that variables and function decleration are moved
+        outside the current scope. This happens for example when a "var" type vairable is created inside a
+        non-function scope. This means that a "var" type variable will always first be decleration globaly and
+        then defined when the code goes throug it. This makes the user able to call the var-type-variable before
+        it is defined. The return is mostly undefined as long as the var-type-variable has not be defined. The
+        same thing happens for var-type-variables within a function but these have a "global-limit" within the
+        function itself. Newly created functions are also hoisted. This is the reason to why you can call a
+        function before its defination.
+        <br /><br />
+        This also happens if a variable is created within a scope but without a "type" decleration
+        (var/const/let). The newly created variable will first be decleration in the global scope and then be
+        defined when the code compiler goes throug its defination. Also a const or let variable that is called
+        before defination will result an error. JavaScript has a declaration called 'use strict' which is typed
+        at the top of the .js files. This command makes the compiler to shout for errors if there are any
+        undeclerad variables that are being called.
+      </p>
+
+      <p>
+        <b>2.</b> What are your thoughts on the module design pattern and the prototype object model?
+        <br /><br />
+        I think it is a good and effective design for those who wants to split their codes. The design can make
+        everything clear for those who are viewing the code, and uneeded function and varables can be hidden. It
+        also comes in hand when using classes. The modules class makes it more clear to see which class is split
+        from which and which extends which. It also reminds of other programming languaeges which uses libries
+        and so on.
+        <br /><br />
+
+        The prototype object is also a handy thing but can be complicated at first. After using it for a while
+        an exprienced user may notice that prototypes reminds of predifined functions and so on in other
+        programming languaeges. Like in programming langueges like Java, every class is extended from the object
+        class. This means that functions, instances and so on can be inherited from the object class by its
+        memebers. The same view can be seen when using prototypes. The prototype contains functions, variables
+        and constructors which can be inherited by the memebers of the object class.
+        <br /><br />
+        When calling a class function like "toString()" the browser first checks if "toString()" is a memeber of
+        the current class. If the "toString()" function is not a member of the current class the browser checks
+        the classes prototype for the function "toString()". Every created class that owns a constructor has a
+        pointer to the property constructor. Properties given in the constructor with "this." sentence are
+        properties that can be used all over the class. A variable created in the "main" class with
+        "className.prototype.number = 24" will be avaiable for every "className" object that is created with
+        "new". As it can be seen the prototype object can first be seen as very messy, but after a while every
+        exprienced programming user may notice that it can be seen as global parent object that exist in every
+        class and is inherited over same class types.
+      </p>
+
+      <p>
+        <b>3.</b> Describe how you opted to organise your JavaScript code in the assignment and your
+        observations and learnings from your code structure. <br /><br />
+        In the hangmang assignment I organised my code by using a class which was later called with the "new"
+        operation. This is because I wanted to split the code from the part that was always running (main) from,
+        to the part that only contained "tools" (functions) that the main part was using. This was part of the
+        organization of the code. The whole code could be implemented in the main part without any errors, but
+        this would it make it more unclear that since functions were inside a seperate class.
+        <br /><br />
+        When it came to the "quiz" assignment I organised the code using two parts without any classes included.
+        The first part is were alla the functions add the listner were located. The other part were the
+        functions that were needed in order to communicate with the API server. The thought of the organizaiton
+        was done mostly by saving time. The get and send function are functions that only need to be defined
+        once. Therefore it may be a good idea to have them in a seperate module. The other functions had to be
+        edited various time through the implementation, therefore I wanted them close so I could edit each
+        function easily when needed.
+      </p>
+
+      <p>
+        <b>4.</b> How do you feel about asynchronous programming in JavaScript, can you relate it to some other
+        programming you done previously? <br /><br />
+        I see Asynchronous programming as very effective since it does not starve other codes while running. It
+        makes more sense if the user wants to do some other thing while for example waiting for a "POST".
+        Asynchronous programming reminds me of the last part of Java that was about working with threads. The
+        goal with threads was also to do various tasks without starving other. This may have been on a larger
+        scale if you compare to JavaScript asynchronous programming but the same goal was intended. I suppose
+        there is much more about it that I don't know yet.
+      </p>
+
+      <p>
+        <b>5.</b> Elaborate on the lint (test) and build sequence of your code. Do you see pros and cons and can
+        you relate it other development work you have done? <br /><br />
+        I think that the lint (test) and build sequence made it less confusing due to that it was unclear which
+        build sequence that should be used when coding with JavaScript. Following a lint can make it more clear
+        for when coding due to that the coder now has a structure of rules to follow. This problem can be seen
+        in other programming langues where there are various of build sequences to implement a code but the
+        question is always which one should I use? This is where linters comes in and suggesting a building
+        sequences. Due to that JavaScript does not have a compiler that sees error under writing, linters can be
+        a good thing to use which will tell you about your building errors based chosen lint structure.
+      </p>
+
+      <p>
+        <b>6.</b> What is your TIL for this course part?<br /><br />
+        Before doing this part I had already learned much about JavaScript since I have worked with java for
+        some time. This made it easier for me to understand this part and solve some tasks wihtout going deeply
+        into how it works. The biggest TIL in this part was when I learned about POST, GET and so on. I have
+        heard about the word API before but I have never known what that really was. This also opens up to new
+        ideas where other programming langues can communicate and cooperate with JavaScript on server side. Also
+        the asynchronous programming was something that I did not really think of, but in some how I figured
+        that JavaScript may be able to work asynchronously. I saw the asynchronous programming as very effective
+        and makes the coder able to create various web applications that work smoothly without interruption.
+      </p>
+    </section>
+	<br><br>
+    <section>
+      <h2>Part 03 - A03</h2>
+      <p>
+        <b>1.</b> For each feature (F1, F2 and so on) you have implemented, write a 5-10 sentences text about it and let the teacher know how you solved it.
+        <br><br>
+        <b>F1:</b><br>
+		<b>1.</b> 
+		The first and most obivious feature here is that page is on a single page. 90% of the code is written in as javaScript code.
+		Some elements are written in the html file, this is beacuse I wanted a blueprint before I started implementing javaScript code on it.
+		This are codes as the menu, tabs menu, body and so on.
+		<br><br>
+		<b>2.</b> 
+		I have made sure that the user is able to open multiple applications when using the SPA. This is by using newly created "window-elements"
+		each time the user is trying to open an new application. When I was working with the page I made sure that the chat application, game application
+		and camera can only be opened once. This setting can easly be changed by removing an if statement that checks if the main part contains a certain 
+		application already. I did this as a personal setting because in a real page you don't want to use multiple chat applications or play multple games, 
+		or even use two web cameras. This settings is mostly used so I can give a proper prensatation of the SPA.
+        <br><br>
+		<b>3.</b> 
+		I have also added the feature to be able to drag an open applications window if the user holds and drags the applications menubar.
+		This is also added with an effect that makes the window look transparent on drag. This was done using eventListeners that are waiting for a ceratain
+		event and changes the current (x,y) cordinates related to the drag mouse position and main-div. I can also mention that I made sure that the user can not
+		escape the main window by dragging the application out of it. This was done by using some math that conatined the diffrenet sizes and postions of a window.
+		<br><br>
+		<b>4-5.</b> 
+		On the top of the main window there is a menu that conatins the applications on the SPA. When a user clicks on a ceratin application a new
+		window containing that applicaton appears on the main page. I added a "tabs-menu" on the main page, where the user can see and accesses each running application
+		the "tabs-menu" gets larger for each open application and deacreases when an application is closed. Each application uses a class attribute named "window", 
+		this attribute is used to have an overview of how many "windows" that are open, which can be used for the "tabs-menu" list. There also an added functionality where
+		the user can minimize a ceratain application on the window, this uses the ".style.display ='inline/none'" function. The application can then be maximized using the "abs-menu". When an application used closed it runs its 
+		"close-function" and in the end run the .remove(); function to get removed from the main-page.
+		<br><br>
+		<b>6-7</b> 
+		I also added the function where opened windows have focus on open, click/drag and maximize. If multiple windows are opened and the user reqests to open a new application using the menu-bar,
+		requested application will be opened and applied on the top of the other applications. If an application that is not on the top of the main/home-div is cliked/dragged the application will appear
+		at the top of the other open applications. This uses some math and the z-index setting.
+		<br><br>
+		On the SPA I have added a Memory Game, Snake Game, Chat and Web Cam. Each application has a "table" where the visuals appears and a menubar with settings as change name, restart and exit.
+		<br><br>
+		<b>F2:</b><br>
+		<b>1.</b> 
+		The memory game is able to get opened multiple times. This is mostly because it was requested and I wanted to show the possbilty of it in the presentation. The other applications are also
+		able to do that but I have disabled it for them. The memory has 12 cards and users openes a cards by click on it or pressing enter on the keyboard. When a uses clicks on a memry cards its
+		img appears using the "style.display = 'inline'". It also contains a timer and uses the storage cache for previousle records. 
+		
+		<br><br>
+		<b>2.</b> 
+		On the memory game the user is able to play with the keyboard or mouse. The keyboard keys are SD and ENTER. This was very painfull to implment and therefore I only did it for SD in order to save time.
+		There a listners that listnens for cerain clicks and acts on that one. The keyboard openings are connect to the mouse clicks using attributes that are set on the table. I could have done this part better,
+		but I had no choice since I have already implemented the code when I relised it.
+        <br><br>
+		<b>3.</b> 
+		The extended future is the timers, records and the ending confetti, also the menubar settings that can be used to restart the game.
+		<br><br>
+		<b>F3:</b><br>
+		<b>1.</b> 
+		The chat application is not able to be opened multiple times. This is mostly because beacuse I wanted to make a clean presentation but also beacuse it does not seem logic to use multiple chat-applications
+		on a single SPA. This setting can ofcourse be changes with a little change in the code.
+		<br><br>
+		<b>2.</b> 
+		The first time the users opens that chat application I have made a black div to appear. What happens is that the program checks if there is a localStorage-item named "username", if there is not, a black
+		div where the user is asked to enter his name appears. This then disappears when the localStorage-item named "username" us set. This is also used when the user wants to change the username.
+        <br><br>
+		<b>3-6.</b> 
+		The username is obviously saved in the localStorage-item named "username" and is then set next time the user opens the application. Users can text a message using text area this is sent to a websocket,
+		and appears on the message screen for each user that is in the same chat-channel. I have also added some time-stamps and nice features on it. The user can change channel, name and see that chat-history from
+		when he was last logged in. These features mostly uses the web cache.
+		<br><br>
+		<b>F4:</b><br>
+		<b>1.</b>
+		The chat application have some additional functions like emojis, caching message history, ability to choose which channel to listen to and abilty to change name.
+		
+		I also decided to add an additional game and a webcam to the application. The game is a snake game that uses the canvas to draw circles on the canvas. This circles move on update  by reading the users keyboard 
+		clicks. When a users "eats" a new circle gets pushed to the circle array. With all this and a redraw of the canvas for each tick it all appears as a moving snake. To see if the snake have ate the distance
+		of the snakes top and the "food" is measured. The user can lose if the top of the snake has same (x,y) values as the other parts (circles). There is also a score counter under the window which displays currenlty
+		eaten snakes. When the user loses he can choose to restart the game or exit by closing the full game application. There is also an ability to pause the game which pauses the redraw of the ticks.
+		
+		The camera is much simplier and uses the navigator.mediDevices to request the user to display their camera. This is then displayed on the cammer application window.
+		<br><br>
+		<b>2.</b><br>
+		I would say that this assignment was medium easy. It got easier the more that I worked with it becuase I got more used to javaScirpt and its possibilities. The hard parts where those parts where math was included
+		it could be like keeping the div inside the main window and counting distances. But I have to say that the hardest part was the memory game, the problem here was that it had to use both keyboard and mouse, I first
+		made seperate functions for this which made it much harder that it should. What I should have done is add all in one function. In order to make these two seperate function communicate on changes I used attributes.
+		Which I do not think is a professional way of doing it. This could be attributes like to check if there are two cards that are opened.
+		<br><br>
+		The menu-bar function was also a bit hard to fix beacuse I was thinking in the wrong way at first. At first I created array that kept currently opened windows and so on. It took me time before I relised that all 
+		opened windows could be set with the window attribute and then read with .getElementeByClass-function. This returned an already set array of opened windows which opened a lot of possibilities.
+		
+		<br><br>
+		Another way that I worked was that I used functions instead of classes. I noticed that function creates its own "enviroment" add listeners have accessss to that enviroment, which could be used when created independent
+		applications. It may have been easier if I used classes, but it is hard to tell right now and I see my way of doing it as a functional way of doing it. JavaScripts functions isside functions opens up to a lot of a possiblites.
+		Each application had a blue print of how it would be set up, witch a window (parentElement, menubar, and tableElement where the applications was running. Each application almost look the same outside the tableElement. Following
+		this structure it was easy for me to implement new applications, beacuse I new how I was going to begin.
+		
+		<br><br>
+		<b>3.</b><br>
+		The biggest TIL of this part was that functions creates its own eniroment which listners inside a function have accesses to this have as said opened up to new possibilities and ideas of how implementing javascript. 
+		The websocket part was also new for me, and I can see how this can be used to sen information fast with reupdating the page. Also building a webpage using SPA is an intressting way to work. Before this assignment 
+		there was a lot of HTML and less programming, but this assignment made it clear that if you can program you may be able to program webpages.
+		
+		<br><br>
+		<b>4.</b><br>
+		I enjoyed working with this course especially  the last assignment which almost only contained javascript programming. This is the part where I learned most especially about javascript, but also some CSS becuase this 
+		was needed to create a nice style on the SPA. I don't think the course is too large or to small, you learn a lot and I almost feel ready to go out and work with web programming, though I know there is much more questions
+		left like how does a websocket really work. And how to I really set up a web-server, without using tools for it... 
+		<br><br>
+		From a scale I 1-10 I would give this course a 9, I would recommend this course to people that would like to learn about webprogramming and already know some coding form other programming languaeges.
+		The bad part about this course is that most of that parts the user have to find by them self, there isn't really a given literature for this course. And some videos did not go fully through how things 
+		work, but this can be seen as a good thing which made me look up more about parts that I wanted to find out. Also videos form last years courses came in handy.
+		<br><br>
+		<b>5.</b><br>
+		The TIL of the entire course is that I learned that you can today create webpages with almost 98% javascript. I have also learned why applications today are called "apps" and not programs. With the knowledge a user
+		is able to create so called "programs" by using javascripts. With good coding it can be done in a way where different can not be noticed. Look at spotify for example...
+		</section>
+    <div id="footerload"></div>
+  </body>
+</html>

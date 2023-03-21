@@ -1,0 +1,100 @@
+{{#if user}}
+  <link rel="stylesheet" href="/style/profilestyle.css">
+      <div class="container">
+        <div class="d-flex bd-highlight mb-3">
+          <div class="me-auto p-2 bd-highlight">
+            <h3>GitLab GUI - Commits</h3> 
+          </div>
+          
+          <div class="p-2 bd-highlight">
+            <button type="button" class="btn btn-secondary" onclick="history.back()">Back</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="row" style="color:black;">
+          <div class="col-4">
+
+            <div class="card">
+              <div style="background: transparent; border-radius: 10px;" class="avatar-ctn">
+               <div> <small style="color: white; float:" class="card-title">{{user.name}}</small> </div>
+                <img style="border-radius: 20px;" src="{{user.avatar_url}}" class="avatar" alt="user profile picture"/>
+              </div>
+
+                <div class="card-body">
+
+                <div id="list-example"  class="list-group">
+                    {{#each projects}}
+                    {{#if this.name}}
+                          <a class="list-group-item list-group-item-action" href="/commits/id/{{this.id}}">{{this.name}}</a>
+                    {{/if}}
+                    {{/each}}
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-8">
+
+            <div class="card text-center" >
+
+                <div class="card-header" style="color:white"> Project:  {{currentProject.name}}  </div>
+                      <div class="card-body" style="color:whitesmoke" >
+            
+                                  
+                                  <div class="table-responsive">
+                                                  <table style="color: black;" class="table">
+                                                    <thead>
+                                                      <tr style="color: white;">
+                                                        <th scope="col">Title</th>
+                                                        <th scope="col">Created</th>
+                                                        <th scope="col">Author</th>
+                                                        <th scope="col">&emsp; Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="mytable">
+                                                      {{#each issues}}         
+                                                      <tr style="color: black" >
+                                                                <th scope="row" colspan=""> <a style=" display:inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 13ch; white-space: nowrap; color: white">{{this.title}}</a> </th>
+                                                                <th scope="row" colspan=""><a style=" display:inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 16ch; white-space: nowrap;">{{this.committed_date}}</a></th>
+                                                                <th scope="row" colspan="">{{this.author_name}}</th>
+                                                                <th style = "white-space: nowrap;" scope="row" colspan=""> 
+                                                                  <p>
+                                                                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample{{this.short_id}}"aria-expanded="false" aria-controls="collapseExample">
+                                                                    Message
+                                                                  </button>
+                                                                  </p> 
+                                                                </th >
+
+                                                                <div class="collapse" id="collapseExample{{this.short_id}}">
+                                                                  <div style="margin-right: auto; margin-left: auto; color:white;" class="card card-body">
+                                                                      <strong>{{this.message}}</strong>
+                                                                  </div>
+                                                                </div>                             
+                                                      </tr>
+                                                      {{/each}}
+
+                                                    </tbody>
+                                                  </table >
+                                  </div>
+
+                                    
+   
+                        </div>
+
+                              <div class="card-footer text-muted">
+                                      GitLab GUI&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="/login/logout">Logout</a>
+                              </div>
+               
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script> const projectID = {{currentProject.id}}</script> 
+     <script src='/socket.io/socket.io.js'></script>
+    <script src="/script/commits.js"></script>
+ {{/if}}

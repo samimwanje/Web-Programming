@@ -1,0 +1,21 @@
+{{#if flash}}
+        <h5 class="alert alert-{{flash.type}}" role="alert"> {{flash.text}} </h5>
+{{/if}}
+
+<ul id="menu">
+
+    <li><a class="sections" href= "/" > Home </a></li>
+    <li><a class="sections" href= "/snippets" > Snippets </a></li>
+
+    {{#if user}}
+        <li><a class="sections" href= "/login/logout" > Logout </a></li>
+    {{else}}
+        <li><a class="sections" href= "/login" > Login </a></li>
+        <li><a class="sections" href= "/register" > Register </a></li>
+    {{/if}}
+ 
+    <li><a id="aboutme" style="margin-left: 20px" href="https://lnu.se/student" target="_blank" rel="noopener noreferrer">
+      |&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLinnaeus university</a>
+    </li>
+
+</ul> 

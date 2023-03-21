@@ -1,0 +1,124 @@
+	
+	/* Body global settings */
+	body {
+    margin:  auto;
+	margin-top: 2px;
+	background: black;
+	background: linear-gradient(to top, gray 10%,black, black);
+	width: 750px;
+	height: 1000px;
+	color: white;
+	font-family: "Comic Sans MS";
+	font-size: 15px;
+	line-height: 22px;
+	cursor: default;
+	}
+
+
+#menu{
+	margin-top: 5px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	border-radius: 3px;
+	border-style: outset;
+	border-width: 3px;
+	border-color: gray;
+	height: 15px;
+	background: black;
+}
+
+#menutext{
+	padding-bottom: 10px;
+	font-size: 15px;
+	color: white;
+	margin-left: 5px;
+}
+
+
+#menubutton{
+	padding: 1px;
+	border-color: gray;
+	margin-right: 10px;
+	border-style: outset;
+	text-decoration: none;
+}
+
+#menubutton:hover{
+	text-shadow: 10px 10px 10px blue; font-size: 16px;
+	border-style: inset;}
+
+
+#menutitle a{
+	text-decoration: none;
+}
+
+#menubutton, #menutitle a:visited{ color: white; }
+
+
+#bankimage, #bankimage2{
+	display: block;
+	margin: auto;
+	border-width: 2px;
+	border: solid;
+	border-color: gray;
+	border-style: outset;
+	border-radius: 10px;
+	width: 600px;
+	height: 372px;
+}
+
+#bankimage2:hover{
+	opacity: 75%;
+}
+
+
+
+#mainimage {
+  position: relative;
+  color: white;
+  text-align: center;
+  height: 750px;
+  border-style: inset;
+  border-color: gray;
+  background-image: url("../img/blackmaster.jpg"); 
+}
+
+
+#mainimage img{	
+ margin-top: 30px;
+}
+
+#mainimage .text{
+  display: inline-bock;
+  position: absolute;
+  top: 340px;
+  right: 42%;
+  font-size: 20px; }
+  
+ #mainimage p{ margin-left: 290px; margin-top: 100px; color: white; }
+  
+ #mainimage p:hover{ text-shadow: 5px 10px 16px white; cursor: pointer;}
+
+
+#mainimage .text a:link{ text-decoration: none; }
+
+#mainimage .text a:hover{ text-shadow: 5px 5px 16px black; }
+
+#mainimage .text a:visited{ color: black; }
+
+
+
+/* Footer settings */
+	footer{
+	color: white;
+	position: relative;
+	bottom: 0px;
+	font-family: "Times new Roman";
+	font-size: 65%; 
+	line-height: 140%;	}
+	
+	/* Footer mechanics */
+	#footerlink:visited{ color: white; }
+	#footerlink:hover{ text-shadow: 3px 3px 8px white; font-size: 10px; color: white; }
+	#footerlink:link{ color: white; }

@@ -1,0 +1,185 @@
+/* Body global settings */
+
+body {
+  margin: 0 auto;
+  background: linear-gradient(to top, black 20%, rgb(65 63 63), black);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  width: 900px;
+  font-size: 100%;
+}
+
+@media all and (min-width: 960px) and (max-width: 1024px) {
+  body {
+    margin: 0 auto;
+    background: linear-gradient(to top, black 20%, rgb(65 63 63), black);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+@media all and (min-width: 801px) and (max-width: 959px) {
+  body {
+    margin: 0 auto;
+    background: linear-gradient(to top, black 20%, rgb(65 63 63), black);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  /* put your css styles in here */
+}
+
+@media all and (min-width: 769px) and (max-width: 800px) {
+  body {
+    margin: 0 auto;
+    background: linear-gradient(to top, black 20%, rgb(65 63 63), black);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    width: 900px;
+    font-size: 15px;
+  }
+
+  /* put your css styles in here */
+}
+
+@media all and (min-width: 569px) and (max-width: 768px) {
+  body {
+    margin: 0 auto;
+    background: linear-gradient(to top, black 20%, rgb(65 63 63), black);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  /* put your css styles in here */
+}
+
+@media all and (min-width: 481px) and (max-width: 568px) {
+  body {
+    margin: 0 auto;
+    background: linear-gradient(to top, black 20%, rgb(65 63 63), black);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  /* put your css styles in here */
+}
+
+@media all and (min-width: 321px) and (max-width: 480px) {
+  body {
+    margin: 0 auto;
+    background: linear-gradient(to top, black 20%, rgb(65 63 63), black);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  /* put your css styles in here */
+}
+
+@media all and (min-width: 0) and (max-width: 320px) {
+  body {
+    margin: 0 auto;
+    background: linear-gradient(to top, black 20%, rgb(65 63 63), black);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  /* put your css styles in here */
+}
+
+/* Menu bar settings */
+#menu {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  list-style-type: none;
+  border-radius: 5px;
+  padding-left: 2px;
+  background: white;
+  text-shadow: 5px 5px 6px black;
+  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#menu li {
+  padding: 6px;
+  display: inline;
+}
+
+/* menu text settings */
+.sections,
+#aboutme {
+  text-decoration: none;
+  color: black;
+}
+
+/* Menu text mechanics/effects */
+.sections:visited,
+#aboutme:visited {
+  color: black;
+}
+
+.sections:hover {
+  text-shadow: 3px 3px 16px red;
+  font-size: 16px;
+  color: black;
+}
+
+#aboutme:hover {
+  text-shadow: 3px 3px 16px blue;
+  font-size: 17px;
+  color: black;
+}
+
+/* Front image mechanics */
+
+/* About image settings */
+#frontimage,
+#aboutimg {
+  border: black 2px inset;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px black;
+}
+
+/* Picture mechanics */
+#frontimage:hover,
+#aboutimg:hover {
+  cursor: pointer;
+  border: black 2px inset;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px gray;
+}
+
+/* Footer settings */
+footer p {
+  font-size: 10px;
+  line-height: 110%;
+}
+
+/* Footer mechanics */
+#footerlink:visited {
+  color: white;
+}
+
+#footerlink:link {
+  color: white;
+}
